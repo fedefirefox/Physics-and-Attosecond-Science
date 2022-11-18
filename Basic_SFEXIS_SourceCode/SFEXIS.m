@@ -4,7 +4,7 @@
 %%%                                 MAIN 1D                             %%%
 %%%                                                                     %%%
 %%%                      Federico Vismarra, 12 May 2020                 %%%
-%%%                                                                     %%%
+%%% IF USED CITE: F Vismarra et al 2022 J. Phys. Photonics 4 034006     %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %               (Politecnico of Milano, Attosecond Research Center)             
 % Special thanks to  M.Lucchini, Y.Wu and B.Moio
