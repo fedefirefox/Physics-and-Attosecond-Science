@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: >-
+  This metadata applies specifically to SFEXIS in the SFEXIS/ directory of this
+  multi-project repository. If you use or adapt SFEXIS, credit Federico Vismarra,
+  cite the preferred article below, and record the software commit used.
+type: software
+title: "SFEXIS: Strong Field Electron XUV Interaction Simulator"
+authors:
+  - family-names: Vismarra
+    given-names: Federico
+repository-code: "https://github.com/fedefirefox/Physics-and-Attosecond-Science"
+url: "https://github.com/fedefirefox/Physics-and-Attosecond-Science/tree/master/SFEXIS"
+abstract: >-
+  MATLAB strong-field XUV/IR photoemission simulator with a reproducible
+  constant-dipole single-point example and preserved original research sources.
+  This bundle does not include the full ensemble averaging or retrieval
+  implementation of the associated article.
+keywords:
+  - attosecond science
+  - strong-field approximation
+  - photoemission
+  - attosecond streaking
+preferred-citation:
+  type: article
+  title: "Ensemble effects on the reconstruction of attosecond pulses and photoemission time delays"
+  authors:
+    - family-names: Vismarra
+      given-names: F.
+    - family-names: Borrego-Varillas
+      given-names: R.
+    - family-names: Wu
+      given-names: Y.
+    - family-names: Mocci
+      given-names: D.
+    - family-names: Nisoli
+      given-names: M.
+    - family-names: Lucchini
+      given-names: M.
+  journal: "Journal of Physics: Photonics"
+  volume: "4"
+  issue: "3"
+  start: "034006"
+  year: 2022
+  month: 6
+  doi: "10.1088/2515-7647/ac7991"
+  url: "https://doi.org/10.1088/2515-7647/ac7991"

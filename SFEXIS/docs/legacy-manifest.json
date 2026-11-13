@@ -1,0 +1,97 @@
+{
+  "source_commit": "c85764f07abc484900e5aa2499e3e163d941b3a2",
+  "source_directory": "Basic_SFEXIS_SourceCode",
+  "destination_directory": "SFEXIS/legacy",
+  "files": [
+    {
+      "path": "Ar_DipoleT_Khe.mat",
+      "git_blob_sha1": "3882ba44cbcabc0988ae9c09384875512659f9c9",
+      "size_bytes": 2561
+    },
+    {
+      "path": "Ar_DipoleT_Transition_Mixed.mat",
+      "git_blob_sha1": "7ceacdc1efd80a70e142500ab896ebee10115084",
+      "size_bytes": 30544
+    },
+    {
+      "path": "AssociatedLaguerre.m",
+      "git_blob_sha1": "ecc6c886a05d97211654eef4192caf4678baed20",
+      "size_bytes": 172
+    },
+    {
+      "path": "AssociatedLegendre.m",
+      "git_blob_sha1": "13131aa95a1707b8474666dc4eb733888c953ee3",
+      "size_bytes": 331
+    },
+    {
+      "path": "DipolestatCalculation1D.m",
+      "git_blob_sha1": "bf62dd97b60c895b2a2741783b28758b0d16cca0",
+      "size_bytes": 1082
+    },
+    {
+      "path": "EField1D.m",
+      "git_blob_sha1": "1a6ea579b56573f73fa42e0c37041ed04168a278",
+      "size_bytes": 1344
+    },
+    {
+      "path": "EField1D_train.m",
+      "git_blob_sha1": "0e4b52a92e49630db4a8129ba0ac1dac1333b3c4",
+      "size_bytes": 3038
+    },
+    {
+      "path": "Ne_DipoleT_Khe.mat",
+      "git_blob_sha1": "73664e71c1f17a093126f5827251ee9b3221bb1f",
+      "size_bytes": 1752
+    },
+    {
+      "path": "SFEXIS.m",
+      "git_blob_sha1": "76d606c8877b0e317733092569e1d0d3991fdca0",
+      "size_bytes": 25313
+    },
+    {
+      "path": "Simulations/20-Mar-202116_36_29TEST1Ar/WeFINALE.fig",
+      "git_blob_sha1": "b5f802d36747f7c0b7e2257a19d5bba0c0f17ff6",
+      "size_bytes": 3095679
+    },
+    {
+      "path": "Simulations/20-Mar-202116_36_29TEST1Ar/Wetot.mat",
+      "git_blob_sha1": "fab03c4c5fe5027264bc20bad3eac34159357284",
+      "size_bytes": 3046124
+    },
+    {
+      "path": "Simulations/20-Mar-202116_36_29TEST1Ar/XUVIRField.fig",
+      "git_blob_sha1": "45c7319659d017e503feaeb27a355dd9d60fdb92",
+      "size_bytes": 383367
+    },
+    {
+      "path": "backup30Ottobre.m",
+      "git_blob_sha1": "704d8fa0d800cdbbf17a3984c34e22a377690375",
+      "size_bytes": 24846
+    },
+    {
+      "path": "bluewhitered.m",
+      "git_blob_sha1": "50578fe364f40a7c928938b3981929fae2e1faa0",
+      "size_bytes": 3259
+    },
+    {
+      "path": "dipoleShift.m",
+      "git_blob_sha1": "94dc2a4a33e81fe7c92ab74dfb22652f76aef29d",
+      "size_bytes": 1437
+    },
+    {
+      "path": "ePie_map.mat",
+      "git_blob_sha1": "1bc059dcc24636893981122538f7658d440de69e",
+      "size_bytes": 561
+    },
+    {
+      "path": "jet_white.mat",
+      "git_blob_sha1": "104f3ed96edd719675fbf3882477c46a562795d3",
+      "size_bytes": 317
+    },
+    {
+      "path": "plotPsi.m",
+      "git_blob_sha1": "690e75ab75fe8cb1fd04748899b7cc5c9ee69dea",
+      "size_bytes": 5713
+    }
+  ]
+}

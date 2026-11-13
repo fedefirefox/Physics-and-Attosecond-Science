@@ -1,0 +1,2 @@
+# Preserve the original SFEXIS blobs, including their existing line endings.
+SFEXIS/legacy/** -text

@@ -1,0 +1,52 @@
+name: SFEXIS
+
+on:
+  pull_request:
+    paths:
+      - 'SFEXIS/**'
+      - 'Basic_SFEXIS_SourceCode/**'
+      - 'CITATION.cff'
+      - '.gitattributes'
+      - '.github/workflows/sfexis.yml'
+  push:
+    branches: [master]
+    paths:
+      - 'SFEXIS/**'
+      - 'Basic_SFEXIS_SourceCode/**'
+      - 'CITATION.cff'
+      - '.gitattributes'
+      - '.github/workflows/sfexis.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproducibility:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify original archive
+        run: python SFEXIS/tests/verify_legacy.py
+      - name: Install citation validators
+        run: python -m pip install PyYAML==6.0.3 jsonschema==4.25.1
+      - name: Validate citation metadata
+        run: python SFEXIS/tests/validate_citation.py
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2023b
+      - name: Run physics and output tests
+        uses: matlab-actions/run-command@v2
+        with:
+          command: disp(version); results=runtests(fullfile(pwd,'SFEXIS','tests')); disp(table(results)); assertSuccess(results);
+      - name: Retain example outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sfexis-example
+          path: SFEXIS/results/
+          if-no-files-found: ignore
