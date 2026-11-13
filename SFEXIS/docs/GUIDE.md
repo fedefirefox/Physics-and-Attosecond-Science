@@ -34,17 +34,17 @@ does not solve the inverse problem of reconstructing pulses from a trace.
 All quantities in the integration kernel are in atomic units. Let the final
 positive momentum along the polarization/detection axis be
 
-\[
+```math
 p=\sqrt{2E},\qquad E\geq0.
-\]
+```
 
 For the maintained constant-dipole model, the amplitude is
 
-\[
+```math
 a(p,\tau)=-i\int_{t_0}^{t_f}E_\mathrm{XUV}(t-\tau)
 \exp\!\left[i(E+I_p)t-i\int_t^{t_f}
 \left(pA_\mathrm{IR}(s)+\frac{A_\mathrm{IR}(s)^2}{2}\right)ds\right]dt.
-\]
+```
 
 Here `potential` means the IR **vector potential**, not the atomic binding
 potential; the electric field satisfies `E_IR = -dA_IR/dt`. The dipole is one.
@@ -53,9 +53,9 @@ delayed XUV pulses are negligible at the edges.
 
 The original main script instead stores the full kinetic action
 
-\[
+```math
 S_p(t)=\int_t^{t_f}\frac{[p+A(s)-A(t_0)]^2}{2}\,ds
-\]
+```
 
 and multiplies `exp(-1i*S_p)` by `exp(1i*Ip*(t-t0))`. When `A(t0)` vanishes,
 expanding the square produces the maintained expression up to the constant
@@ -107,10 +107,10 @@ The cited paper examines how spatially varying fields affect measured traces
 and their reconstruction. A spatial ensemble requires an incoherent sum of
 local probabilities, schematically
 
-\[
+```math
 S_\mathrm{ensemble}(E,\tau)=\int n(\mathbf r)\,w(\mathbf r)\,
 S(E,\tau;\mathbf r)\,d^3r,
-\]
+```
 
 with the local fields, gas density, collection weighting and volume measure
 specified consistently. A cylindrically symmetric integration includes the
@@ -129,10 +129,10 @@ The conversions retained from the original source are
 
 The XUV electric field is
 
-\[
+```math
 E_X(t-\tau)=\exp[-2\ln2((t-\tau)/T_X)^2]
 \cos[\omega_X(t-\tau)+\phi_X],\qquad \omega_X=\hbar^{-1}\mathcal E_X.
-\]
+```
 
 `xuv_fwhm_fs` is the FWHM of its **intensity envelope**, not the FWHM of its
 electric-field amplitude and not of its oscillating instantaneous intensity.
@@ -140,10 +140,10 @@ The same transform-limited pulse is shifted as a whole, including its carrier.
 
 The IR is constructed from a Gaussian vector potential,
 
-\[
+```math
 A_I(t)=-C\,g(t)\sin(\omega_I t+\phi_I)/\omega_I,
 \quad g(t)=\exp[-2\ln2(t/T_I)^2],
-\]
+```
 
 and its exact derivative is used for `E_I`. The scale `C` is chosen so that the
 sampled maximum of `E_I(t)^2` matches the requested peak intensity.
